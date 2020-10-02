@@ -1,0 +1,301 @@
+﻿@font-face {
+    font-family: 'Poppins-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../assets/fonts/Poppins-Bold.eot') format('embedded-opentype'),
+         url('../../assets/fonts/Poppins-Bold.woff') format('woff'),
+         url('../../assets/fonts/Poppins-Bold.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../assets/fonts/Poppins-Bold.eot') format('embedded-opentype'),
+         url('../../assets/fonts/Poppins-Bold.woff') format('woff'),
+         url('../../assets/fonts/Poppins-Bold.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'Poppins-Bold';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../../assets/fonts/Poppins-Bold.eot') format('embedded-opentype'),
+         url('../../assets/fonts/Poppins-Bold.woff') format('woff'),
+         url('../../assets/fonts/Poppins-Bold.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'Poppins-Light';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../../assets/fonts/Poppins-Light.eot') format('embedded-opentype'),
+         url('../../assets/fonts/Poppins-Light.woff') format('woff'),
+         url('../../assets/fonts/Poppins-Light.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'Poppins-Medium';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../../assets/fonts/Poppins-Medium.eot') format('embedded-opentype'),
+         url('../../assets/fonts/Poppins-Medium.woff') format('woff'),
+         url('../../assets/fonts/Poppins-Medium.ttf')  format('truetype');
+}
+
+.cursorily {
+    cursor: pointer;
+}
+.hov:hover {
+    color: #000;
+}
+.ico-size {
+    font-size: 16px;
+}
+.ico-size-month {
+    font-size: 24px !important;
+    line-height: 24px !important;
+    color: #fbae17 !important;
+}
+.dtp_modal-months .fa-angle-left {
+    color: #cfcfcf !important;
+}
+.ico-size-large {
+    font-size: 20px !important;
+    line-height: 30px !important;
+    color: #fff !important;
+}
+.dtp_main {
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 0;
+    height: 32px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -1px;
+}
+.dtp_main span,
+.dtp_main i {
+    display: inline-block;
+    padding-right: 8px;
+    display: none;
+}
+.dtp_modal-win {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: #eeeeee;
+    opacity: 0.6;
+    display: none;
+}
+.dtp_modal-content {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 650px;
+    position: absolute;
+    z-index: 1000;
+    top: 300px !important;
+    right: 200px !important;
+    left: inherit !important;
+    font-size: 16px;
+    font-weight: normal;
+    min-height: 350px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+}
+.dtp_modal-content-no-time {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 312px;
+    position: absolute;
+    z-index: 1000;
+    top: 100px;
+    left: 100px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.dtp_modal-title {
+    border-bottom: solid 3px #01adff;
+    padding: 16px 36px;
+    margin-bottom: 16px;
+    font-size: 22px;
+    display: none;
+}
+.dtp_modal-cell-date {
+    width: 312px;
+    float: left;
+    margin-bottom: 22px;
+    margin-top: 6px;
+    padding-left: 6px;
+}
+.dtp_modal-cell-time {
+    width: 290px;
+    float: right;
+    direction: ltr;
+    background: #fbae17;
+    min-height: 350px;
+    border-radius: 0 10px 10px 0;
+    position: relative;
+}
+.dtp_modal-cell-time:before {
+    position: absolute;
+    right: 40px;
+    top: -10px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 10px solid #fbae17;
+    content: '';
+}
+.dtp_modal-months {
+    color: #7d7d7d;
+    text-align: center;
+    font-size: 20px;
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.dtp_modal-months span {
+    display: inline-block;
+    padding: 10px 20px;
+    width: 230px;
+    font-family: 'Poppins-Medium';
+    font-size: 18px;
+    color: #000;
+}
+.dtp_modal-calendar {
+    width: 100%;
+    margin-left: 22px;
+}
+.dtp_modal-calendar-cell {
+    width: 27px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    color: #000;
+    margin: 6px 8px;
+}
+.dtp_modal-colored {
+    color: #000;
+}
+.dtp_modal-grey {
+    color: #000;
+}
+.dtp_modal-cell-selected {
+    background-color: #ffe8e0;
+    border-radius: 4px;
+    transition: background-color 1s ease-out;
+}
+.dtp_modal-time-block {
+    height: 212px;
+    width: 100%;
+}
+.dpt_modal-button {
+    background-color: transparent;
+    color: #bc7d00;
+    font-size: 12px;
+    height: 34px;
+    line-height: 34px;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border: solid 1px #cf8900;
+    border-radius: 8px;
+    font-family: 'Poppins-SemiBold';
+    min-width: 90px;
+    margin-left: 45px;
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    margin-top: 70px;
+}
+.dpt_modal-button:hover {
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.09);
+}
+.dtp_modal-time-line {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    /*padding-top: 25px;*/
+    font-family: 'Poppins-Medium';
+    padding-left: 45px;
+    text-align: left;
+}
+.dtp_modal-time-block .dtp_modal-time-line:first-child {
+    padding-top: 20px;
+    font-size: 16px;
+    color: #ffdb93;
+}
+.dtp_modal-time-mechanic {
+    padding-top: 35px;
+}
+.dtp_modal-append {
+    color: #7d7d7d;
+    padding-left: 55px;
+    font-weight: normal;
+}
+.dtp_modal-midle {
+    display: inline-block;
+    width: 40px;
+}
+.dtp_modal-midle-dig {
+    display: inline-block;
+    width: 16px;
+    text-align: center;
+}
+.dtp_modal-digits {
+    font-size: 18px;
+    padding-left: 45px;
+}
+.dtp_modal-digits span {
+	font-family: 'Poppins-Medium';
+}
+.dtp_modal-digits span.dtp_modal-digit {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	background: #f1a000;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+}
+.dtp_modal-digits span.dtp_modal-midle-dig {
+	width: 25px;
+	text-align: center;	
+    color: #fff;
+}
+.dtp_modal-last-dig {
+    opacity: 0;
+    width: 25px;
+    display: inline-block;
+}
+#angle-up-hour {
+    margin: 0 0 2px 8px;
+}
+#angle-down-hour {
+    margin: 2px 0 0 8px;
+}
+#angle-up-minute {
+    margin: 0 0 2px 23px;
+}
+#angle-down-minute {
+    margin: 2px 0 0 23px;
+}
+#angle-up-ampm {
+    margin: 0 0 2px 22px;
+}
+#angle-down-ampm {
+    margin: 2px 0 0 22px;
+}
+.dtp_modal-time-block ~ .dpt_modal-button:nth-child(2) {
+    float: right;
+    border: solid 1px #fff; 
+    color: #fff;
+    margin-left: 0;
+    margin-right: 45px;
+}
